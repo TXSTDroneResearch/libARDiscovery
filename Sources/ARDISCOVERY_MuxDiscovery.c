@@ -34,12 +34,15 @@
 #include <string.h>
 #include <stddef.h>
 #include <errno.h>
-#include <sys/uio.h>
 
 #ifdef BUILD_LIBMUX
 
 #include <libARSAL/ARSAL.h>
 #include <libpomp.h>
+
+#ifdef HAVE_SYS_UIO_H
+#include <sys/uio.h>
+#endif
 
 #include <libARDiscovery/ARDISCOVERY_MuxDiscovery.h>
 #include "libmux.h"

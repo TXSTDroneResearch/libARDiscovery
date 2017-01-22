@@ -34,6 +34,10 @@
 #include <libARDiscovery/ARDISCOVERY_Error.h>
 #include <libARDiscovery/ARDISCOVERY_Connection.h>
 
+#ifdef _WIN32
+#include <ws2tcpip.h>
+#endif
+
 /**
  * @brief Low level communication related structure
  */

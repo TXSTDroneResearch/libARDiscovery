@@ -38,7 +38,6 @@
 #ifndef _ARDISCOVERY_DEVICE_H_
 #define _ARDISCOVERY_DEVICE_H_
 
-#include <json/json.h>
 #include <libARNetworkAL/ARNETWORKAL_Manager.h>
 #include <libARNetworkAL/ARNETWORKAL_Error.h>
 #include <libARNetwork/ARNETWORK_IOBufferParam.h>
@@ -48,6 +47,8 @@
 #include <libARDiscovery/ARDISCOVERY_NetworkConfiguration.h>
 
 struct mux_ctx;
+struct json_object;
+typedef struct json_object json_object;
 
 //TODO add!!!
 typedef eARDISCOVERY_ERROR (*ARDISCOVERY_Device_ConnectionJsonCallback_t) (json_object *jsonObj, void *customData);
